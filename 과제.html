@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>jQuery Mobile</title>
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;}
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+   <div data-role="page" id="home">
+      <div data-role="header" data-theme="b">
+         <h1>회사 소개 앱</h1>
+      </div>
+      <div data-role="content" style="text-align:center">
+        <a href="http://www.doosaninfracore.com/kr/">
+	<img src="1-1.png"img width="300" height="100" >
+	</a>
+         <ul data-role="listview" data-inset="true">
+            <li><a rel="external" href="#intro">두산인프라코어 소개</a></li>
+            <li><a rel="external" href="#movie" data-rel="dialog">두산인프라코어 영상</a></li>
+            <li><a rel="external" href="#gallery">두산인프라코어 사진</a></li>
+         </ul>
+	
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h1>두산인프라코어</h1>
+      </div>
+   </div>
+
+   <div data-role="page" id="intro" data-theme="b">
+      <div data-role="header" data-theme="b">
+         <a rel="external"href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+         <h1>두산인프라코어 소개</h1>
+      </div>
+      <div data-role="content">
+            <div  style="text-align:center">
+                     <img width="300" height="100" img src="1-1.png" >
+            </div>
+         <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+            <div data-role="collapsible" data-collapsed="false">
+               <h3>두산인프라코어 소개</h3>
+               <p>
+               두산인프라코어는 건설기계, 엔진 및
+                각종 어태치먼트와 유틸리티 장비 등 모든
+                참여 사업분야에서 독보적 위상을
+                구축한 한국 최고의 기계기업이며,
+               세계 최고 수준의 경쟁력을 바탕으로
+                인프라지원산업분야 글로벌 선도기업으로
+                비상하고 있는 회사입니다.</p>
+            </div>
+            <div data-role="collapsible">
+               <h3>두산인프라코어 지원동기</h3>
+               <p>아버지가 다니는 회사여서
+		평소에 관심이 많았고 
+		아버지가 받고있는 혜택이나 
+		복지가 너무 좋아 이회사를 근무를 하고싶다는 생각이들었습니다.
+		</p>
+            </div>
+			<div data-role="collapsible">
+               <h3>두산인프라코어 채용</h3>
+               <p>두산로보틱스
+               SW Developer
+               [필요역량]
+               Spring 기반 개발
+               Agile Scrum 기반의 프로젝트 수행
+               TCP/IP 기반의 전문 통신 개발
+
+               빅데이터 관련 플랫폼 개발 경험자 우대
+               [자격요건]
+               전산공학, 컴퓨터공학 전공자
+               경력 3년 이상</p>
+            </div>
+
+         </div>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h1>두산인프라코어</h1>
+      </div>
+   </div>
+   <div data-role="page" id="movie" data-theme="b">
+      <div data-role="header" data-position="fixed" data-theme="b">
+      <a rel="external" href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+         <h1>두산인프라코어 영상</h1>
+      </div>
+      <div data-role="content" >
+         <div class="ui-bar ui-bar-e">두산인프라코어 동영상</div><br/>
+         <li><iframe width="450" height="500" src="https://www.youtube.com/embed/3zJLs2isWM0" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe></li><br/>
+         </video></li>
+      </div>
+      <div data-role="footer" data-theme="b">
+      </div>
+   </div>
+
+
+   <div data-role="page" id="gallery"  data-theme="b">
+      <div data-role="header" data-position="fixed"  data-theme="b">
+         <a rel="external" href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+         <h1>두산인프라코어 갤러리</h1>
+      </div>
+      <div data-role="content">
+            <ul class="picture">
+      <li><a href="1-2.png"><img src="1-2.png"/></a></li>
+      <li><a href="1-4.png"><img src="1-4.png"/></a></li>
+      <li><a href="1-5.png"><img src="1-5.png"/></a></li>
+      <li><a href="1-6.png"><img src="1-6.png"/></a></li>
+      <li><a href="1-7.png"><img src="1-7.png"/></a></li>
+      <li><a href="1-8.png"><img src="1-8.png"/></a></li>
+      <li><a href="1-9.png"><img src="1-9.png"/></a></li>
+      <li><a href="2-0.png"><img src="2-0.png"/></a></li>
+            </ul>
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+         <h1>두산인프라코어</h1>
+      </div>
+   </div>
+</div>
+</body>
+</html>
